@@ -1,10 +1,13 @@
+alert('howdy');
+
 window.onload = function () {
 
-document.getElementById(':mv').onclick = function(){
+var composeBool = /\?compose\=|&compse\=/i.test(location.href);
 
-alert('hi world');
-
-}
-
+	if ( composeBool ) {
+		document.getElementById(':mv').onclick = function(){
+		
+		}
+	}
 };
 
