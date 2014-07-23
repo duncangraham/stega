@@ -38,11 +38,10 @@ function addGibberish (element) {
       text = markov.generate(100);
       
       newDiv = document.createElement('div');
-      newDiv = document.createElement('div');
       newText = document.createTextNode(text);
       newDiv.appendChild(newText);
-      newDiv.style.display = 'none';
-
+      newDiv.style.maxHeight = '0px';
+      newDiv.style.overflow = 'hidden';
       element.appendChild(newDiv); 
 }
 
