@@ -1,5 +1,7 @@
 var randomWiki,
-    markov;
+    markov,
+    text;
+
 
 window.onload = function () {
   getWiki();
